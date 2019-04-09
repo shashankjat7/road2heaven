@@ -1,0 +1,22 @@
+<%include ../partials/header%>
+<div class="container">
+<header class="jumbotron">
+	<h1>welcome to the heavens!!!!</h1>
+	<p>find your best travel destinations</p>
+	<a class="btn btn-primary" href="/destinations/new">ADD NEW</a>
+</header>
+	<div class="row" style="display: flex;flex-wrap: wrap;text-align: center;">
+	<%roads.forEach(function(road){ %>
+	<div class="col-lg-3 col-md-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="<%= road.image %>">
+			<div class="caption">
+				<h3> <%=road.name %></h3>
+			</div>
+			<a href="/destinations/<%=road._id%>" class="btn btn-primary" style="margin-bottom: 10px;">More Info</a>
+		</div>    
+	</div>
+	<%}) %>
+	</div>
+</div>
+<% include ../partials/footer %>
