@@ -1,0 +1,28 @@
+{
+  "name": "road2heaven",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashankjat7/road2heaven.git"
+  },
+  "author": "shashank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashankjat7/road2heaven/issues"
+  },
+  "homepage": "https://github.com/shashankjat7/road2heaven#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "request": "^2.88.0"
+  }
+}
